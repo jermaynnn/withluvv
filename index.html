@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify with Reveal Image</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Spotify Embed -->
+  <div class="spotify-wrapper">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4xsxetIkT5v9YZLamIt1BR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+
+
+  <!-- Camera Button -->
+  <div class="camera-wrapper">
+    <img id="cameraBtn" src="camera_btn.jpg" alt="Camera Icon" class="center">
+
+  </div>
+
+<!-- Hidden Collage (Initially Hidden) -->
+<div class="collage-container" id="collage" style="display: none;">
+    <div class="text-column">
+      <h1>With love</h1>
+      <p class="phonetic">[luv] <span>noun</span></p>
+      <p class="definition">
+        an intense feeling of deep affection for another person;<br>
+        a strong emotional attachment.
+      </p>
+    </div>
+    <div class="image-column">
+      <img src="luv.jpg" alt="Love Image 1">
+      <img src="luv.jpg" alt="Love Image 2">
+      <img src="luv.jpg" alt="Love Image 3">
+    </div>
+  </div>
+
+
+<!-- First Overlay: Your Message -->
+<div class="message-overlay" id="messageBox" style="display: none;">
+    <div class="message-content">
+      <h2>My Love</h2>
+      <p>
+        Love is not just about finding the right person — it's about being the right person. 
+        Cherish every smile, every moment, every hug.
+      </p>
+      <button class="close-btn" onclick="showFinalMessage()">Okay</button>
+    </div>
+  </div>
+
+  
+  <!-- Second Overlay: I love you -->
+  <div class="message-overlay" id="finalMessage" style="display: none;">
+    <div class="message-content">
+      <h2>I love you</h2>
+      <p>Every universe, every moment, every heartbeat.</p>
+      <button class="close-btn" onclick="startSpotify()">Close</button>
+    </div>
+  </div>
+  
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
